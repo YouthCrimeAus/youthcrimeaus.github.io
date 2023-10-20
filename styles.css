@@ -1,6 +1,7 @@
 
 html {
     background-color: rgb(42, 66, 110);
+    justify-content: center;
 }
 
 #header > * {
@@ -16,9 +17,30 @@ html {
     background-color: rgb(50, 76, 125);
     border: 2px solid rgb(50, 76, 125);
     border-radius: 25px;
+    animation: fadeIn
 }
 
 #AboutText {
+    display: flex;
+    text-align: center;
+    color: rgb(247, 185, 15);
+    font-size: 40px;
+    animation: fadeIn 2s;
+    background-image: linear-gradient(to right, #218de0, #0079ea, #0062ef, #0045ee, #1a11e5);
+    border: 2px hidden;
+    border-radius: 25px;
+}
+#StatisticsText {
+    display: flex;
+    text-align: center;
+    color: rgb(247, 185, 15);
+    font-size: 40px;
+    animation: fadeIn 2s;
+    background-image: linear-gradient(to right, #218de0, #0079ea, #0062ef, #0045ee, #1a11e5);
+    border: 2px hidden;
+    border-radius: 25px;
+}
+#ContactText {
     display: flex;
     text-align: center;
     color: rgb(247, 185, 15);
@@ -58,6 +80,7 @@ html {
         font-weight: bold;
         color: rgb(237, 197, 50);
         font-size: 20px;
+        animation: fadeIn 2s;
     }
 
         #info > button:hover {
@@ -90,6 +113,9 @@ html {
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 100; }
+    0% { opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
 }
