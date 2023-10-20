@@ -3,65 +3,31 @@
 <head>
     <title>Youth Crime Australia</title>
     <link rel="stylesheet" href="index.css">
-    <style>
-
-        html {
-            background-color: rgb(42, 66, 110);
-        }
-        #header > * {
-            font-family: "Helvetica";
-            color: rgb(247, 185, 15);
-        }
-
-        #header {
-            display: grid;
-            justify-content: center;
-            width: 98.5vw;
-            height: 12vh;
-            background-color: rgb(50, 76, 125);
-            border: 2px solid rgb(50, 76, 125);
-            border-radius: 25px;
-        }
-
-        #text1 {
-            text-align: center;
-            padding: 20px;
-            color: rgb(247, 185, 15);
-            font-size: 40px;
-        }
-
-        #info {
-            padding: 4px;
-        }
-
-        #info > button {
-                border: solid 2px rgb(50, 76, 125);
-                background-color: rgb(50, 76, 125);
-                padding: 14px 28px;
-                font-size: 16px;
-                cursor: pointer;
-                display: inline-block;
-                border-radius: 25px;
-                font-family: 'Courier New';
-                font-weight: bold;
-                color: rgb(98, 130, 189);
-                font-size: 20px;
-            }
-    </style>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body onload="start()">
     <div id="header">
         <h1>Youth Crime Australia</h1>
     </div>
     <div id="webnav">
         <div id="info">
-            <button>About Us</button>
+            <button id="About" onclick="hide()">About Us</button>
+            <button>Statistics</button>
+            <button id="Contact">Contact Us</button>
         </div>
-
+        <div id="Welcome">
+            <h2>
+                Welcome to The Webpage of The Australian Committee of Youth Crime Prevention
+            </h2>
+        </div>
     </div>
-    <p id="text1">
-        In recent years youth related crime has been a very major problem in Australia. So we as a committee have decided to come together to create an initiative to help rehabilitate children who participate in criminal activity, whether that be theft, vandalism or drug use.
-    </p>
+    <div id="AboutText">
+        <img src="https://media.discordapp.net/attachments/1065876861902651393/1164710918228295852/vandalisedwall.jpg?ex=65443492&is=6531bf92&hm=1c5b649949a6ce431f754088d456c9445c728425bb1e95505833ac2ef12b04d5&="/>
+        <p>
+            In recent years youth related crime has been a very major problem in Australia. So we as a committee have decided to come together to create an initiative to help rehabilitate children who participate in criminal activity, whether that be theft, vandalism or drug use.
+        </p>
+    </div>
 </body>
 </html>
 
