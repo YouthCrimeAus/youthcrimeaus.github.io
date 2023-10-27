@@ -1,7 +1,13 @@
 
 html {
-    background-color: rgb(42, 66, 110);
+    background-image: linear-gradient(to right top, #1829be, #0029a3, #002787, #00236b, #091e4f);
     justify-content: center;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+html > * {
+    max-width: 98.75vw;
 }
 
 #header > * {
@@ -14,7 +20,7 @@ html {
     justify-content: center;
     width: 98.5vw;
     height: 12vh;
-    background-color: rgb(50, 76, 125);
+    background-image: linear-gradient(to right, #001aff, #003dca, #00298a,#001e63);
     border: 2px solid rgb(50, 76, 125);
     border-radius: 25px;
     animation: fadeIn
@@ -24,12 +30,32 @@ html {
     display: flex;
     text-align: center;
     color: rgb(247, 185, 15);
-    font-size: 40px;
+    font-size: 30px;
     animation: fadeIn 2s;
     background-image: linear-gradient(to right, #218de0, #0079ea, #0062ef, #0045ee, #1a11e5);
     border: 2px hidden;
     border-radius: 25px;
+    margin:3px
 }
+
+#Mission {
+    display: flex;
+    text-align: center;
+    color: rgb(247, 185, 15);
+    font-size: 30px;
+    animation: fadeIn 2s;
+    background-image: linear-gradient(to right, #218de0, #0079ea, #0062ef, #0045ee, #1a11e5);
+    border: 2px hidden;
+    border-radius: 25px;
+    margin:3px
+}
+
+#Mission > img {
+    border: 1px hidden;
+    border-radius: 25px;
+    padding: 5px;
+}
+
 #StatisticsText {
     display: flex;
     text-align: center;
@@ -39,7 +65,9 @@ html {
     background-image: linear-gradient(to right, #218de0, #0079ea, #0062ef, #0045ee, #1a11e5);
     border: 2px hidden;
     border-radius: 25px;
+    margin:3px
 }
+
 #ContactText {
     display: flex;
     text-align: center;
@@ -49,6 +77,7 @@ html {
     background-image: linear-gradient(to right, #218de0, #0079ea, #0062ef, #0045ee, #1a11e5);
     border: 2px hidden;
     border-radius: 25px;
+    margin:3px
 }
 
 #AboutText > img {
@@ -99,12 +128,27 @@ html {
 #Welcome{
     width: 98.75vw;
     height: 50vh;
-    background-image: linear-gradient(to right, #ffffff, #fafafa, #f5f5f5, #f0f0f0, #ebebeb);
+    background-image: linear-gradient(to right, #ffffff, #f5f5f5, #ebebeb, #d4d4d4, #cccccc);
     border: 2px hidden;
     border-radius: 25px;
     display: flex;
     animation: fadeIn 2s;
     justify-content:center;
+}
+
+#AboutText > button {
+    border: solid 2px rgb(50, 79, 133);
+    background-color: rgb(50, 76, 125);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+    font-family: Georgia;
+    font-weight: bold;
+    color: rgb(237, 197, 50);
+    font-size: 20px;
+    animation: fadeIn 2s;
 }
 
 #Welcome > * {
