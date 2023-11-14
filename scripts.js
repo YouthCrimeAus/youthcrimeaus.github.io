@@ -4,11 +4,13 @@ function start() {
     var z = document.getElementById("StatisticsText")
     var w = document.getElementById("ContactText")
     var v = document.getElementById("Mission")
+    var l = document.getElementById("Rehab")
     x.style.display = "none"
     y.style.display = "flex"
     z.style.display = "none"
     w.style.display = "none"
     v.style.display = "none"
+    l.style.display = "none"
 }
 
 function hideA() {
@@ -31,12 +33,14 @@ function hideA() {
 function hideB() {
     var x = document.getElementById("Welcome")
     var z = document.getElementById("StatisticsText");
+    var y = document.getElementById("Rehab")
     if (z.style.display === "none") {
-        z.style.display = "flex";
+        z.style.display = "block";
         z.scrollIntoView();
     } else {
         z.scrollIntoView();
         z.style.display = "none";
+        y.style.display = "none";
     }
 }
 
@@ -60,6 +64,19 @@ function hideD() {
         v.scrollIntoView();
     } else {
         z.scrollIntoView();
+        v.style.display = "none";
+    }
+}
+
+function hideF() {
+    var z = document.getElementById("Welcome")
+    var v = document.getElementById("Rehab")
+    var w = document.getElementById("StatisticsText")
+    if (v.style.display === "none") {
+        v.style.display = "flex";
+        v.scrollIntoView();
+    } else {
+        w.scrollIntoView();
         v.style.display = "none";
     }
 }
