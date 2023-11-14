@@ -5,12 +5,14 @@ function start() {
     var w = document.getElementById("ContactText")
     var v = document.getElementById("Mission")
     var l = document.getElementById("Rehab")
+    var d = document.getElementById("Tyrique")
     x.style.display = "none"
     y.style.display = "flex"
     z.style.display = "none"
     w.style.display = "none"
     v.style.display = "none"
     l.style.display = "none"
+    d.style.display = "none"
 }
 
 function hideA() {
@@ -34,6 +36,7 @@ function hideB() {
     var x = document.getElementById("Welcome")
     var z = document.getElementById("StatisticsText");
     var y = document.getElementById("Rehab")
+    var v = document.getElementById("Tyrique")
     if (z.style.display === "none") {
         z.style.display = "block";
         z.scrollIntoView();
@@ -41,6 +44,7 @@ function hideB() {
         z.scrollIntoView();
         z.style.display = "none";
         y.style.display = "none";
+        v.style.display = "none";
     }
 }
 
@@ -72,8 +76,25 @@ function hideF() {
     var z = document.getElementById("Welcome")
     var v = document.getElementById("Rehab")
     var w = document.getElementById("StatisticsText")
+    var l = document.getElementById("Tyrique")
     if (v.style.display === "none") {
         v.style.display = "flex";
+        l.style.display = "none";   
+        v.scrollIntoView();
+    } else {
+        w.scrollIntoView();
+        v.style.display = "none";
+    }
+}
+
+function hideE() {
+    var z = document.getElementById("Welcome")
+    var v = document.getElementById("Tyrique")
+    var w = document.getElementById("StatisticsText")
+    var l = document.getElementById("Rehab")
+    if (v.style.display === "none") {
+        v.style.display = "flex";
+        l.style.display = "none";   
         v.scrollIntoView();
     } else {
         w.scrollIntoView();
