@@ -1,228 +1,103 @@
-
-html {
-    background-image: linear-gradient(to right top, #1829be, #0029a3, #002787, #00236b, #091e4f);
-    justify-content: center;
-    scroll-behavior: smooth;
-    min-height: 100vh;
-    overflow-x: hidden;
-    max-width: 100vw;
+function start() {
+    var x = document.getElementById("AboutText");
+    var y = document.getElementById("Welcome")
+    var z = document.getElementById("StatisticsText")
+    var w = document.getElementById("ContactText")
+    var v = document.getElementById("Mission")
+    var l = document.getElementById("Rehab")
+    var d = document.getElementById("Tyrique")
+    x.style.display = "none"
+    y.style.display = "flex"
+    z.style.display = "none"
+    w.style.display = "none"
+    v.style.display = "none"
+    l.style.display = "none"
+    d.style.display = "none"
 }
 
-::-webkit-scrollbar {
-    display: none;
-    -ms-overflow-style: none;
-}
-
-html > * {
-    max-width: 98.75vw;
-}
-
-body {
-    overflow-x:hidden;
-}
-
-#header > * {
-    font-family: "Helvetica";
-    color: rgb(247, 185, 15);
-}
-
-#header {
-    display: grid;
-    justify-content: center;
-    width: 98.5vw;
-    height: 12vh;
-    background-image: linear-gradient(to right, #001aff, #003dca, #00298a,#001e63);
-    border: 2px solid rgb(50, 76, 125);
-    border-radius: 25px;
-    animation: fadeIn
-}
-
-#AboutText {
-    display: flex;
-    text-align: center;
-    color: rgb(247, 185, 15);
-    font-size: 30px;
-    animation: fadeIn 2s;
-    background-image: linear-gradient(to right, #218de0, #0079ea, #0062ef, #0045ee, #1a11e5);
-    border: 2px hidden;
-    border-radius: 25px;
-    margin:3px
-}
-
-#Mission {
-    display: flex;
-    text-align: center;
-    color: rgb(247, 185, 15);
-    font-size: 30px;
-    animation: fadeIn 2s;
-    background-image: linear-gradient(to right, #218de0, #0079ea, #0062ef, #0045ee, #1a11e5);
-    border: 2px hidden;
-    border-radius: 25px;
-    margin:3px
-}
-
-#Mission > img {
-    border: 1px hidden;
-    border-radius: 25px;
-    padding: 5px;
-}
-
-#StatisticsText {
-    text-align: center;
-    color: rgb(247, 185, 15);
-    font-size: 30px;
-    animation: fadeIn 2s;
-    background-image: linear-gradient(to right, #218de0, #0079ea, #0062ef, #0045ee, #1a11e5);
-    border: 2px hidden;
-    border-radius: 25px;
-
-}
-
-#StatisticsText > img {
-    border: 2px hidden;
-    border-radius: 25px;
-    margin: 3px;
-}
-
-#StatisticsText > p {
-margin:10px;
-}
-
-    #StatisticsText > button {
-        border: solid 2px rgb(50, 79, 133);
-        background-color: rgb(50, 76, 125);
-        padding: 14px 28px;
-        font-size: 16px;
-        cursor: pointer;
-        display: inline-block;
-        border-radius: 25px;
-        font-family: Georgia;
-        font-weight: bold;
-        color: rgb(237, 197, 50);
-        font-size: 20px;
-        animation: fadeIn 2s;
-        margin: 10px;
+function hideA() {
+    var z = document.getElementById("Welcome");
+    var x = document.getElementById("AboutText");
+    var v = document.getElementById("Mission");
+    if (x.style.display === "none" && v.style.display === "none") {
+        x.style.display = "flex";
+        x.scrollIntoView();
+    } else if (x.style.display === "flex" && v.style.display === "none") {
+        z.scrollIntoView();
+        x.style.display = "none";
+    } else if (x.style.display === "flex" && v.style.display === "flex") {
+        z.scrollIntoView();
+        x.style.display = "none";
+        v.style.display = "none";
     }
+}
 
-    #StatisticsText > button:hover {
-    background-color: rgb(65, 146, 217);
-    border: solid 2px rgb(71, 160, 237);
+function hideB() {
+    var x = document.getElementById("Welcome")
+    var z = document.getElementById("StatisticsText");
+    var y = document.getElementById("Rehab")
+    var v = document.getElementById("Tyrique")
+    if (z.style.display === "none") {
+        z.style.display = "block";
+        z.scrollIntoView();
+    } else {
+        z.scrollIntoView();
+        z.style.display = "none";
+        y.style.display = "none";
+        v.style.display = "none";
     }
-
-#Rehab {
-    text-align: center;
-    color: rgb(247, 185, 15);
-    font-size: 30px;
-    animation: fadeIn 2s;
-    background-image: linear-gradient(to right, #218de0, #0079ea, #0062ef, #0045ee, #1a11e5);
-    border: 2px hidden;
-    border-radius: 25px;
-    margin: 3px
 }
 
-#Rehab > img {
-    border: 2px hidden;
-    border-radius: 25px;
-    margin: 3px;
-}
-
-#ContactText {
-    display: flex;
-    text-align: center;
-    color: rgb(247, 185, 15);
-    font-size: 40px;
-    animation: fadeIn 2s;
-    background-image: linear-gradient(to right, #218de0, #0079ea, #0062ef, #0045ee, #1a11e5);
-    border: 2px hidden;
-    border-radius: 25px;
-    margin:3px
-}
-
-#AboutText > img {
-    border:1px hidden;
-    border-radius:25px;
-    padding: 5px;
-}
-
-#info {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    border: 2px hidden;
-    border-radius: 25px;
-    background-image: linear-gradient(to right, #ffffff, #fafafa, #f5f5f5, #f0f0f0, #ebebeb);
-    animation: fadeIn 2s;
-    margin: 3px 0px 3px 0px;
-}
-
-    #info > button {
-        border: solid 2px rgb(50, 79, 133);
-        background-color: rgb(50, 76, 125);
-        padding: 14px 28px;
-        font-size: 16px;
-        cursor: pointer;
-        display: inline-block;
-        border-radius: 25px;
-        font-family: Georgia;
-        font-weight: bold;
-        color: rgb(237, 197, 50);
-        font-size: 20px;
-        animation: fadeIn 2s;
+function hideC() {
+    var z = document.getElementById("Welcome")
+    var w = document.getElementById("ContactText");
+    if (w.style.display === "none") {
+        w.style.display = "flex";
+        w.scrollIntoView();
+    } else {
+        z.scrollIntoView();
+        w.style.display = "none";
     }
-
-        #info > button:hover {
-            background-color: rgb(65, 146, 217);
-            border: solid 2px rgb(71, 160, 237);
-        }
-
-#About {
-    margin: 0px 20vw 0px 0px;
 }
 
-#Contact {
-    margin: 0px 0px 0px 20vw;
-}
-
-#Welcome {
-    width: 98.75vw;
-    height: 50vh;
-    background-image: linear-gradient(to right, #ffffff, #f5f5f5, #ebebeb, #d4d4d4, #cccccc);
-    border: 2px hidden;
-    border-radius: 25px;
-    display: flex;
-    animation: fadeIn 2s;
-    justify-content: center;
-    max-width: 98.75vw;
-}
-
-#Welcome > * {
-    max-width: 98.75vw;
-}
-
-#AboutText > button {
-    border: solid 2px rgb(50, 79, 133);
-    background-color: rgb(50, 76, 125);
-    padding: 14px 28px;
-    font-size: 16px;    
-    cursor: pointer;
-    display: inline-block;
-    border-radius: 25px;
-    font-family: Georgia;
-    font-weight: bold;
-    color: rgb(237, 197, 50);
-    font-size: 20px;
-    animation: fadeIn 2s;
-}
-
-#Welcome > * {
-    text-align:center;
-    display: flex;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0;
+function hideD() {
+    var z = document.getElementById("Welcome")
+    var v = document.getElementById("Mission")
+    if (v.style.display === "none") {
+        v.style.display = "flex";
+        v.scrollIntoView();
+    } else {
+        z.scrollIntoView();
+        v.style.display = "none";
     }
-    100% {
-        opacity: 100;
+}
+
+function hideF() {
+    var z = document.getElementById("Welcome")
+    var v = document.getElementById("Rehab")
+    var w = document.getElementById("StatisticsText")
+    var l = document.getElementById("Tyrique")
+    if (v.style.display === "none") {
+        v.style.display = "flex";
+        l.style.display = "none";   
+        v.scrollIntoView();
+    } else {
+        w.scrollIntoView();
+        v.style.display = "none";
+    }
+}
+
+function hideE() {
+    var z = document.getElementById("Welcome")
+    var v = document.getElementById("Tyrique")
+    var w = document.getElementById("StatisticsText")
+    var l = document.getElementById("Rehab")
+    if (v.style.display === "none") {
+        v.style.display = "flex";
+        l.style.display = "none";   
+        v.scrollIntoView();
+    } else {
+        w.scrollIntoView();
+        v.style.display = "none";
     }
 }
