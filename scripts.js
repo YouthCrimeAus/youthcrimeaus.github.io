@@ -6,6 +6,7 @@ function start() {
     var v = document.getElementById("Mission")
     var l = document.getElementById("Rehab")
     var d = document.getElementById("Tyrique")
+    var f = document.getElementById("Tyrique2")
     x.style.display = "none"
     y.style.display = "flex"
     z.style.display = "none"
@@ -13,6 +14,7 @@ function start() {
     v.style.display = "none"
     l.style.display = "none"
     d.style.display = "none"
+    f.style.display = "none"
 }
 
 function hideA() {
@@ -37,6 +39,7 @@ function hideB() {
     var z = document.getElementById("StatisticsText");
     var y = document.getElementById("Rehab")
     var v = document.getElementById("Tyrique")
+    var w = document.getElementById("Tyrique2")
     if (z.style.display === "none") {
         z.style.display = "block";
         z.scrollIntoView();
@@ -45,6 +48,7 @@ function hideB() {
         z.style.display = "none";
         y.style.display = "none";
         v.style.display = "none";
+        w.style.display = "none";
     }
 }
 
