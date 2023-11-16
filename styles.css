@@ -144,6 +144,26 @@ margin:10px;
         max-width: 40vw;
         max-height: 45vh;
     }
+    #Tyrique > button {
+        border: solid 2px rgb(50, 79, 133);
+        background-color: rgb(50, 76, 125);
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 25px;
+        font-family: Georgia;
+        font-weight: bold;
+        color: rgb(237, 197, 50);
+        font-size: 20px;
+        animation: fadeIn 2s;
+        margin: 10px;
+    }
+
+    #Tyrique > button:hover {
+    background-color: rgb(65, 146, 217);
+    border: solid 2px rgb(71, 160, 237);
+    }
 #Tyrique2 {
     text-align: center;
     color: rgb(247, 185, 15);
