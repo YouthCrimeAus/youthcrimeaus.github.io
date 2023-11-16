@@ -144,6 +144,16 @@ margin:10px;
         max-width: 40vw;
         max-height: 45vh;
     }
+#Tyrique2 {
+    text-align: center;
+    color: rgb(247, 185, 15);
+    font-size: 30px;
+    animation: fadeIn 2s;
+    background-image: linear-gradient(to right, #218de0, #0079ea, #0062ef, #0045ee, #1a11e5);
+    border: 2px hidden;
+    border-radius: 25px;
+    margin: 3px
+}
 
 #ContactText {
     display: flex;
