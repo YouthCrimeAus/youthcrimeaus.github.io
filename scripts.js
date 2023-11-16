@@ -81,6 +81,7 @@ function hideF() {
     var v = document.getElementById("Rehab")
     var w = document.getElementById("StatisticsText")
     var l = document.getElementById("Tyrique")
+    var 2 = document.getElementById("Tyrique2")
     if (v.style.display === "none") {
         v.style.display = "flex";
         l.style.display = "none";   
@@ -99,6 +100,21 @@ function hideE() {
     if (v.style.display === "none") {
         v.style.display = "flex";
         l.style.display = "none";   
+        v.scrollIntoView();
+    } else {
+        w.scrollIntoView();
+        v.style.display = "none";
+    }
+}
+
+function hideG() {
+    var z = document.getElementById("Welcome")
+    var v = document.getElementById("Tyrique2")
+    var w = document.getelementById("StatisticsText")
+    var l = document.getelementById("Rehab")
+    if (v.style.display === "none") {
+        v.style.display = "flex";
+        1.style.display = "none";
         v.scrollIntoView();
     } else {
         w.scrollIntoView();
