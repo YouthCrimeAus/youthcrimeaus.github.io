@@ -113,7 +113,7 @@ function hideE() {
 function hideG() {
     var z = document.getElementById("Welcome")
     var v = document.getElementById("Tyrique2")
-    var w = document.getelementById("StatisticsText")
+    var w = document.getElementById("StatisticsText")
     if (v.style.display === "none") {
         v.style.display = "flex";
         v.scrollIntoView();
